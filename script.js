@@ -1,0 +1,1 @@
+const nav=document.querySelector('.nav'); window.addEventListener('scroll',()=>{if(nav)nav.classList.toggle('scrolled',scrollY>30)}); const path=location.pathname.split('/').pop()||'index.html'; document.querySelectorAll('.nav nav a').forEach(a=>{if(a.getAttribute('href')===path)a.classList.add('active')});
